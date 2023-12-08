@@ -1,6 +1,5 @@
-# ChatterBox
+# ChatterBox: Multi-round Multimodal Referring and Grounding
 
-ChatterBox: Multi-round Multimodal Referring and Grounding
 
 The paper, code, model, and dataset will be released soon.
 
