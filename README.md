@@ -2,7 +2,6 @@
 
 
 *The paper, code, model, and dataset will be released soon.*
-## Documentation
 
 ## Getting Started  -->
 
