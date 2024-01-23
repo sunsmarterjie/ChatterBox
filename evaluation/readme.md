@@ -11,10 +11,9 @@
 
 ## Data preparation
 ### 1. Download image and annotations
-
 - Download the official MSCOCO2017 image dataset from [cocodataset.org](https://cocodataset.org/#download) or [Baidu Netdisk](https://blog.csdn.net/qq_47233366/article/details/126575414)
 ### 2. Generate questions for grounding
-- You can run the following command ([generate_coco_id.py](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/generate_coco_id.py), [generate_grounding_qa.py](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/generate_qa.py)) to generate questions and corresponding GT answers.
+- You can run the following command ([generate_coco_id.py](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/generate_coco_id.py), [generate_grounding_qa.py](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/generate_qa.py)) to generate questions and corresponding GT answers:
 ```python
 python generate_coco_id.py --coco_path /path/to/MSCOCO2017/annotations/instances_val2017.json
 python generate_grounding_qa.py --coco_path /path/to/MSCOCO2017/annotations/instances_val2017.json --id_path /path/to/coco_val_id_name.json
