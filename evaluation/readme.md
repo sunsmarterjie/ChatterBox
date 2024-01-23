@@ -19,7 +19,7 @@
 python generate_coco_id.py --coco_path /path/to/MSCOCO2017/annotations/instances_val2017.json
 python generate_grounding_qa.py --coco_path /path/to/MSCOCO2017/annotations/instances_val2017.json --id_path /path/to/coco_val_id_name.json
 ```
- - Alternatively, you can also download the pre-processed file: [grounding_qa.json](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/grounding_files/grouding_qa.json).Remember to replace image and annotation paths in our provided file with the specific path on your machine.
+ - Alternatively, you can also download the pre-processed file: [grounding_qa.json](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/grounding_files/grouding_qa.json). Remember to replace image and annotation paths in our provided file with the specific path on your machine.
 
 ## Evaluation
 ### 1. Grounding results
@@ -28,7 +28,7 @@ python generate_grounding_qa.py --coco_path /path/to/MSCOCO2017/annotations/inst
 bash eval_grounding.sh
 ```
 - Remember to replace the related paths in our provided file with the specific path on your machine.
-- Alternatively, you can also download the predicted file: [predict_grounding.json]().Remember to replace image and annotation paths in our provided file with the specific path on your machine.
+- Alternatively, you can also download the predicted file: [predict_grounding.json](). Remember to replace image and annotation paths in our provided file with the specific path on your machine.
 ### 2. Evaluation
 - You can run the following command to evaluate results of chatterbox:
 ```
