@@ -6,7 +6,7 @@
 
 ## Getting Started  -->
 
-# <img src="assets/chatterbox_logo_1.png" alt="Alt text for the image" width="45" height="40"> ChatterBox: Multi-round Multimodal Referring and Grounding
+# <img src="assets/chatterbox_logo_1.png" alt="Alt text for the image" width="45" height="45"> ChatterBox: Multi-round Multimodal Referring and Grounding
 
  [[Paper](https://arxiv.org/abs/2310.07704)]
 
