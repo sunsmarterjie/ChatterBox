@@ -14,7 +14,7 @@
 
 - Download the official MSCOCO2017 image dataset from [cocodataset.org](https://cocodataset.org/#download) or [Baidu Netdisk](https://blog.csdn.net/qq_47233366/article/details/126575414)
 ### 2. Generate questions for grounding
-- You can run the following command to generate questions and corresponding GT answers.
+- You can run the following command ([generate_coco_id.py](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/generate_coco_id.py), [generate_grounding_qa.py](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/generate_qa.py)) to generate questions and corresponding GT answers.
 ```python
 python generate_coco_id.py --coco_path /path/to/MSCOCO2017/annotations/instances_val2017.json
 python generate_grounding_qa.py --coco_path /path/to/MSCOCO2017/annotations/instances_val2017.json --id_path /path/to/coco_val_id_name.json
@@ -23,14 +23,14 @@ python generate_grounding_qa.py --coco_path /path/to/MSCOCO2017/annotations/inst
 
 ## Evaluation
 ### 1. Grounding results
-- You can run the following command to get predicted results:
+- You can run the following command ([eval_grounding.sh](https://github.com/sunsmarterjie/ChatterBox/blob/main/eval_grounding.sh)) to get predicted results:
 ```
 bash eval_grounding.sh
 ```
 - Remember to replace the related paths in our provided file with the specific path on your machine.
 - Alternatively, you can also download the predicted file: [predict_grounding.json](). Remember to replace image and annotation paths in our provided file with the specific path on your machine.
 ### 2. Evaluation
-- You can run the following command to evaluate results of chatterbox:
+- You can run the following command ([evaluate_coco_gd.py](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/evaluate_coco_gd.py)) to evaluate results of chatterbox:
 ```
-python evaluate_coco_gd.py --gt_predict_file /path/to/test_out.json
+python evaluate_coco_gd.py --gt_predict_file /path/to/predict_grounding.json
 ```
