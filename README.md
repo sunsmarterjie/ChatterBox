@@ -1,12 +1,5 @@
-# ChatterBox: Multi-round Multimodal Referring and Grounding
-
-
-*The paper, code, model, and dataset will be released soon.*
-
-## Getting Started  -->
-
 # <img src="assets/chatterbox_logo_1.png" alt="Alt text for the image" width="45" height="45"> ChatterBox: Multi-round Multimodal Referring and Grounding
-
+*The paper, code, model, and dataset will be released soon.*
  [[Paper](https://arxiv.org/abs/2310.07704)]
 
 [Yunjie Tian*](https://sunsmarterjie.github.io/), [Tianren Ma*](), [Lingxi Xie](), [Jihao Qiu](), [Xi Tang](), [Yuan Zhang](), [Jianbin Jiao](), [Qi Tian](), [Qixiang Ye]() 
