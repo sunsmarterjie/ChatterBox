@@ -123,7 +123,8 @@ LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-1
 * Train ChatterBox on 8xA800 GPUs (80GB).
 
 ```
-python startup_chatterbox.py
+python startup_stage1.py  # stage1
+python startup_stage2.py  # stage2
 ```
 
 
