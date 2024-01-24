@@ -8,7 +8,6 @@ import torchvision
 
 import os
 
-#from gpt4roi.train.train import preprocess, preprocess_multimodal
 from mmdet.datasets import CocoDataset
 from mmdet.datasets.api_wrappers import COCO
 import random
@@ -146,7 +145,7 @@ class CocoDet(CocoDataset):
                  tokenizer,
                  multimodal_cfg=None,
                  vis_processor=None,
-                 vis_root='/home/TianYunjie/Workspace/datasets/MSCOCO2017',
+                 vis_root='../datasets/MSCOCO2017',
                  add_eos=True,
                  ignore_instruction=True,
                  filter_small=False,
@@ -1285,7 +1284,6 @@ class VGDATA(CocoDataset):
         }
 
         data_dict['image'] = image
-        # print('vg ori_bboxes   >>> ', ori_bboxes)
         select_bboxes = copy.deepcopy(select_bboxes) / image.shape[1]
 
         data_dict['bboxes'] = select_bboxes
@@ -1654,7 +1652,6 @@ class JackReferringDataset(torch.utils.data.Dataset):
 
 
     def __getitem__(self, idx):
-        # print('**********************************************************************')
 
         while True:
             idx = random.randint(0, len(self.jack_json) - 1)
@@ -2134,7 +2131,7 @@ class ReferringDataset(torch.utils.data.Dataset):
             if dataset == "jackvanilla":
                 self.all_datasets.append(
                     JackVanillaDataset(
-                        base_root='/home/TianYunjie/Workspace/datasets/VG/VG/',
+                        base_root='../datasets/VG/',
                         vision_tower=vision_tower,
                         tokenizer=tokenizer,
                         anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
@@ -2143,7 +2140,7 @@ class ReferringDataset(torch.utils.data.Dataset):
             elif dataset == "jackreferring":
                 self.all_datasets.append(
                     JackReferringDataset(
-                        base_root='/home/TianYunjie/Workspace/datasets/VG/VG/',
+                        base_root='../datasets/VG/',
                         vision_tower=vision_tower,
                         tokenizer=tokenizer,
                         anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
@@ -2152,7 +2149,7 @@ class ReferringDataset(torch.utils.data.Dataset):
             elif dataset == "refcocos":
                 self.all_datasets.append(
                     RefCOCOsDataset(
-                        base_root=base_coco14_dir,
+                        base_root='../datasets/MSCOCO2014/',
                         vision_tower=vision_tower,
                         tokenizer=tokenizer,
                         anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
@@ -2161,7 +2158,7 @@ class ReferringDataset(torch.utils.data.Dataset):
             elif dataset == "coco":
                 self.all_datasets.append(
                     CocoDet(
-                        vis_root=base_coco17_dir,
+                        vis_root='../datasets/MSCOCO2017/',
                         tokenizer=tokenizer,
                         multimodal_cfg=multimodal_cfg,
                     )
@@ -2170,8 +2167,8 @@ class ReferringDataset(torch.utils.data.Dataset):
                 self.all_datasets.append(
                     RefCOCO(
                         tokenizer=tokenizer,
-                        ann_file='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/OpenSource/finetune_refcoco_train.json',
-                        img_prefix=base_coco14_dir,
+                        ann_file='../OpenSource/finetune_refcoco_train.json',
+                        img_prefix='../datasets/MSCOCO2014/',
                         multimodal_cfg=multimodal_cfg,
                     )
                 )
@@ -2179,8 +2176,8 @@ class ReferringDataset(torch.utils.data.Dataset):
                 self.all_datasets.append(
                     RefCOCOP(
                         tokenizer=tokenizer,
-                        ann_file='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/OpenSource/finetune_refcoco+_train.json',
-                        img_prefix=base_coco14_dir,
+                        ann_file='../OpenSource/finetune_refcoco+_train.json',
+                        img_prefix='../datasets/MSCOCO2014/',
                         multimodal_cfg=multimodal_cfg,
                     )
                 )
@@ -2188,8 +2185,8 @@ class ReferringDataset(torch.utils.data.Dataset):
                 self.all_datasets.append(
                     RefCOCOG(
                         tokenizer=tokenizer,
-                        ann_file='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/OpenSource/finetune_refcocog_train.json',
-                        img_prefix=base_coco14_dir,
+                        ann_file='../OpenSource/finetune_refcocog_train.json',
+                        img_prefix='../datasets/MSCOCO2014/',
                         multimodal_cfg=multimodal_cfg,
                     )
                 )
@@ -2197,8 +2194,8 @@ class ReferringDataset(torch.utils.data.Dataset):
                 self.all_datasets.append(
                     VGDATA(
                         tokenizer=tokenizer,
-                        ann_file='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/OpenSource/vg_train.json',
-                        img_prefix=base_vg_dir,
+                        ann_file='../OpenSource/vg_train.json',
+                        img_prefix=../datasets/VG/,
                         multimodal_cfg=multimodal_cfg,
                     )
                 )
@@ -2206,8 +2203,8 @@ class ReferringDataset(torch.utils.data.Dataset):
                 self.all_datasets.append(
                     Flickr30k(
                         tokenizer=tokenizer,
-                        ann_file='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/OpenSource/final_flickr_separateGT_train.json',
-                        img_prefix=base_flickr_dir,
+                        ann_file='../OpenSource/final_flickr_separateGT_train.json',
+                        img_prefix='../datasets/Flickr30K/,
                         multimodal_cfg=multimodal_cfg,
                     )
                 )
