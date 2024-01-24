@@ -105,6 +105,10 @@ LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-1
 │── llava-llama-2-13b-chat-lightning-preview
 |                      ├── config.json
 │                      └── ...
+│── OpenSource
+|        ├── finetune_refcoco_train.json
+|        ├── finetune_refcoco+_train.json
+│        └── ...
 ```
 
 * Train ChatterBox on 8xA800 GPUs (80GB).
