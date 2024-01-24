@@ -102,7 +102,7 @@ def parse_args(args):
     parser.add_argument("--no_eval", action="store_true", default=False)
     parser.add_argument("--eval_only", action="store_true", default=False)
     parser.add_argument("--vision_pretrained", default="PATH_TO_DINO", type=str)
-    parser.add_argument("--weight", default="",type=str)
+    parser.add_argument("--weight", default="./output/stage1_weight",type=str)
     parser.add_argument("--print_freq", default=1, type=int)
     parser.add_argument("--start_epoch", default=0, type=int)
     return parser.parse_args(args)
