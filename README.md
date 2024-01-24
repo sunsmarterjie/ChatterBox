@@ -82,14 +82,21 @@ We build visual branch of ChatterBox using [GroundingDINO](https://github.com/ID
 Download [VG](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html), [COCO2017](https://cocodataset.org/#download), [COCO2014](https://cocodataset.org/#download), [RefCOCO](https://web.archive.org/web/20220413011718/https://bvisionweb1.cs.unc.edu/licheng/referit/data/refcoco.zip), [RefCOCO+](https://web.archive.org/web/20220413011656/https://bvisionweb1.cs.unc.edu/licheng/referit/data/refcoco+.zip), [RefCOCOg](https://web.archive.org/web/20220413012904/https://bvisionweb1.cs.unc.edu/licheng/referit/data/refcocog.zip), [Flickr30K](https://shannon.cs.illinois.edu/DenotationGraph/), [OpenSource](https://drive.google.com/file/d/1mHIm6u9D2SuUyGoQQI4bO7GC9ecjY_Y5/view?usp=sharing), [clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14), 
 
 ```
-├── dataset
-│   ├── coco
-│   │   └── train2017
-│   │       ├── 000000000009.jpg
-│   │       └── ...
-│   ├── llava_dataset
-│   │   └── llava_instruct_150k.json
-│   │   ├── refclef
+├── datasets
+|   ├── VG
+|   |    ├── VG_100K
+|   |    ├── VG_100K_2
+│   │    └── ...
+│   ├── MSCOCO2017
+|   |    ├── train2017
+│   │    └── ...
+│   ├── MSCOCO2014
+|   |    ├── train2014
+│   │    └── ...
+│   ├── Flickr30K
+|   |    ├── flickr30k-images
+│   │    └── ...
+│   ├── llava_instruct_150k.json
 │   │   ├── refcoco
 │   │   ├── refcoco+
 │   │   └── refcocog
