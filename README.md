@@ -18,7 +18,7 @@ Paper: ([arXiv 2401.10166](https://arxiv.org/abs/2401.10166))
 
 <p align="center">
     <img src="assets/figure-structure-1.jpg" width="80%"></a> <br>
-    Diagram of ChatterBox Model.
+    The architecture of the ChatterBox model. It receives the image and the current question with dialogue history as input, and produces language output and, if necessary, vision output i.e., visual grounding results). The location decoder is magnified to illustrate the interaction between the query token and visual features.
 </p>
 
 
