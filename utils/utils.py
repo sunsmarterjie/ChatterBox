@@ -9,36 +9,6 @@ DEFAULT_IMAGE_PATCH_TOKEN = "<im_patch>"
 DEFAULT_IM_START_TOKEN = "<im_start>"
 DEFAULT_IM_END_TOKEN = "<im_end>"
 
-SHORT_QUESTION_LIST = [
-    DEFAULT_IMAGE_TOKEN + " " + "Can you segment the {class_name} in this image?",
-    DEFAULT_IMAGE_TOKEN + " " + "Please segment the {class_name} in this image.",
-    DEFAULT_IMAGE_TOKEN
-    + " "
-    + "What is {class_name} in this image? Please respond with segmentation mask.",
-    DEFAULT_IMAGE_TOKEN
-    + " "
-    + "What is {class_name} in this image? Please output segmentation mask.",
-]
-
-LONG_QUESTION_LIST = [
-    DEFAULT_IMAGE_TOKEN + " " + "{sent} Please respond with segmentation mask.",
-    DEFAULT_IMAGE_TOKEN + " " + "{sent} Please output segmentation mask.",
-]
-
-EXPLANATORY_QUESTION_LIST = [
-    "Please output segmentation mask and explain why.",
-    "Please output segmentation mask and explain the reason.",
-    "Please output segmentation mask and give some explaination.",
-]
-
-ANSWER_LIST = [
-    "It is [SEG].",
-    "Sure, [SEG].",
-    "Sure, it is [SEG].",
-    "Sure, the segmentation result is [SEG].",
-    "[SEG].",
-]
-
 
 class Summary(Enum):
     NONE = 0
