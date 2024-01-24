@@ -121,7 +121,6 @@ class RefCOCOGroundingDataset(torch.utils.data.Dataset):
         return bboxes
 
     def __getitem__(self, idx):
-        # print('**********************************************************************')
 
         while True:
             idx = random.randint(0, len(self.jack_json) - 1)
@@ -323,7 +322,6 @@ class COCOGroundingDataset(torch.utils.data.Dataset):
         return bboxes
 
     def __getitem__(self, idx):
-        # print('**********************************************************************')
 
         while True:
             idx = random.randint(0, len(self.jack_json) - 1)
@@ -591,9 +589,6 @@ class JackGroundingDataset(torch.utils.data.Dataset):
                     # 'the cup is on the desk. <cup:[238, 249, 298, 511], red and orange desk:[241, 289, 300, 390]>'
                     # extract the bboxes string: <cup:[238, 249, 298, 511], red and orange desk:[241, 289, 300, 390]>
                     bboxes_str = re.findall(r"<(.+?)>", sentence["value"])
-                    # extract the bboxes : [[238, 249, 298, 511], [241, 289, 300, 390]]
-                    # bboxes = self.strbbox2bbox(bboxes_str)
-                    # delete the bboxes string: 'the cup is on the desk.'
                     sentence['value'] = sentence['value'][:sentence['value'].find('<')]
 
                     bboxes_human.append([])
@@ -602,7 +597,6 @@ class JackGroundingDataset(torch.utils.data.Dataset):
                     sentence_next = source[j + 1]
                     bboxes_str_next = re.findall(r"<(.+?)>", sentence_next["value"])
                     bboxes_next = self.strbbox2bbox(bboxes_str_next)
-                    # print('bboxes_str_next >>> ', bboxes_str_next)
                     if len(bboxes_next) == 1:
                         ins_name = bboxes_str_next[0].split('<')[-1].split(':')[0]
                     ######################################################################
@@ -982,7 +976,7 @@ class GroundingDataset(torch.utils.data.Dataset):
             if dataset == "refcocoground":
                 self.all_datasets.append(
                     RefCOCOGroundingDataset(
-                        base_root='/home/TianYunjie/Workspace/datasets/MSCOCO2014/images/train2014/',
+                        base_root='../datasets/train2014/',
                         tokenizer=tokenizer,
                         vision_tower=vision_tower,
                         anno_path="/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/"
