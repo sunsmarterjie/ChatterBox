@@ -41,6 +41,7 @@ Key Contributions:
 - [Install](#install)
 - [Train](#train)
 - [Evaluation](#evaluation)
+- [Demo](#demo)
 
 ## Install
 
@@ -73,6 +74,17 @@ ChatterBox is trained on 8 A800 GPUs with 80GB memory.
 ```
 python startup_chatterbox.py
 ```
+
+
+
+## Evaluation
+
+See details at [evaluation](evaluation/README.md).
+
+
+## Demo
+
+xxx.
 
 
 ## Citation
