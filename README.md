@@ -75,6 +75,8 @@ python setup.py build install
 
 ## Train
 
+We build visual branch of ChatterBox using [GroundingDINO](https://github.com/IDEA-Research/GroundingDINO) and [DINO](https://github.com/IDEA-Research/DINO), we provide GroundDINO version now. 
+
 * Prepare datasets:
 
 ```
@@ -91,7 +93,7 @@ python setup.py build install
 │   │   └── refcocog
 ```
 
-* Train ChatterBox on 8xA800 GPUs (80GB). 
+* Train ChatterBox on 8xA800 GPUs (80GB).
 
 ```
 python startup_chatterbox.py
