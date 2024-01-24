@@ -957,9 +957,7 @@ class GroundingDataset(torch.utils.data.Dataset):
             vqa_data='llava_instruct_150k',
     ):
         dataset = "refcocoground||cocoground||jackground||jacklogicground"
-        # sample_rate = [5, 5, 5, 1]
         sample_rate = [5, 8, 1, 1]
-        # sample_rate = [5, 8, 0, 0]
 
         sample_rate = np.array(sample_rate)
         self.sample_rate = sample_rate / sample_rate.sum()
