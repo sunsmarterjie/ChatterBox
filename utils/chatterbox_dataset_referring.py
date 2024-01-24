@@ -2132,7 +2132,7 @@ class ReferringDataset(torch.utils.data.Dataset):
                 self.all_datasets.append(
                     JackVanillaDataset(
                         base_root='../datasets/VG/',
-                        vision_tower=vision_tower,
+                        vision_tower='../clip-vit-large-patch14',
                         tokenizer=tokenizer,
                         anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
                     )
@@ -2141,7 +2141,7 @@ class ReferringDataset(torch.utils.data.Dataset):
                 self.all_datasets.append(
                     JackReferringDataset(
                         base_root='../datasets/VG/',
-                        vision_tower=vision_tower,
+                        vision_tower='../clip-vit-large-patch14',
                         tokenizer=tokenizer,
                         anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
                     )
@@ -2150,7 +2150,7 @@ class ReferringDataset(torch.utils.data.Dataset):
                 self.all_datasets.append(
                     RefCOCOsDataset(
                         base_root='../datasets/MSCOCO2014/',
-                        vision_tower=vision_tower,
+                        vision_tower='../clip-vit-large-patch14',
                         tokenizer=tokenizer,
                         anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
                     )
