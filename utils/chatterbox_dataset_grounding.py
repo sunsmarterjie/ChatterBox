@@ -985,7 +985,7 @@ class GroundingDataset(torch.utils.data.Dataset):
             elif dataset == "cocoground":
                 self.all_datasets.append(
                     COCOGroundingDataset(
-                        base_root='/home/TianYunjie/Workspace/datasets/MSCOCO2017/train2017',
+                        base_root='../datasets/train2017',
                         tokenizer=tokenizer,
                         vision_tower=vision_tower,
                         anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
@@ -994,7 +994,7 @@ class GroundingDataset(torch.utils.data.Dataset):
             elif dataset == "jackground":
                 self.all_datasets.append(
                     JackGroundingDataset(
-                        base_root='/home/TianYunjie/Workspace/datasets/VG/VG/',
+                        base_root='../datasets/VG/',
                         tokenizer=tokenizer,
                         vision_tower=vision_tower,
                         anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
@@ -1003,7 +1003,7 @@ class GroundingDataset(torch.utils.data.Dataset):
             elif dataset == "jacklogicground":
                 self.all_datasets.append(
                     JackLogicGroundingDataset(
-                        base_root='/home/TianYunjie/Workspace/datasets/VG/VG/',
+                        base_root='../datasets/VG/',
                         tokenizer=tokenizer,
                         vision_tower=vision_tower,
                         anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
