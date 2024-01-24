@@ -10,8 +10,6 @@ import torch.nn.functional as F
 from transformers import CLIPImageProcessor
 import torchvision
 
-# from .dino_transform import dino_transform
-
 from .conversation import get_default_conv_template
 from .utils import (
     DEFAULT_IM_END_TOKEN,
