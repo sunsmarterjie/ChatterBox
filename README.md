@@ -84,6 +84,10 @@ LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-1
 
 ```
 ├── datasets
+|   ├── CB-300K
+|   |    ├── CB-MRG
+|   |    ├── CB-LC
+│   │    └── ...
 |   ├── VG
 |   |    ├── VG_100K
 |   |    ├── VG_100K_2
