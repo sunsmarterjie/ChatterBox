@@ -3,8 +3,7 @@
 
 <h3><img src="assets/chatterbox_logo_1.png" alt="Alt text for the image" width="25" height="25"> ChatterBox: Multi-round Multimodal Referring and Grounding</h3>
 
-*The paper, code, model, and dataset will be released soon.*
- [[Paper](https://arxiv.org/abs/2310.07704)]
+
 
 [Yunjie Tian*](https://sunsmarterjie.github.io/)<sup>1</sup>, Tianren Ma*<sup>1</sup>, [Lingxi Xie](https://scholar.google.com.hk/citations?user=EEMm7hwAAAAJ&hl=zh-CN&oi=ao)<sup>2</sup>, Jihao Qiu<sup>1</sup>, Xi Tang<sup>1</sup>, Yuan Zhang<sup>1</sup>, Jianbin Jiao<sup>1</sup>, [Qi Tian](https://scholar.google.com.hk/citations?user=61b6eYkAAAAJ&hl=zh-CN&oi=ao)<sup>2</sup>, [Qixiang Ye](https://scholar.google.com.hk/citations?user=tjEfgsEAAAAJ&hl=zh-CN&oi=ao)<sup>1</sup> 
 
@@ -28,6 +27,10 @@ Key Contributions:
 * **MRG** - introduce a new task named **multi-round multimodal referring and grounding** (MRG).
 * **CB-300k** - propose a **data construction scheme **and establish the **CB-300K benchmark** to facilitate the research in MRG.
 * **Chatterbox Model** - vision-language model that injects explicit **vision modules** into an MLLM, providing an agile and effective solution of MRG.
+
+
+## Updates
+ * **` Jan. 19th, 2024`:**The paper, code, model, and dataset will be released soon.* [[Paper](https://arxiv.org/abs/2310.07704)]
 
 
 ## Release
