@@ -24,7 +24,6 @@ Paper: ([arXiv 2401.10166](https://arxiv.org/abs/2401.10166))
 
 Key Contributions:
 
-* **MRG** - introduce a new task named **multi-round multimodal referring and grounding** (MRG).
 * **CB-300k** - propose a **data construction scheme **and establish the **CB-300K benchmark** to facilitate the research in MRG.
 * **Chatterbox Model** - vision-language model that injects explicit **vision modules** into an MLLM, providing an agile and effective solution of MRG.
 
