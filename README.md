@@ -98,3 +98,7 @@ If this project has been helpful or if you've used our dataset, please cite:
   year={2024}
 }
 ```
+
+## Acknowledgment
+
+This project is based on LLaVA ([paper](https://arxiv.org/abs/2312.00752), [code](https://github.com/state-spaces/mamba)), LISA ([paper](https://arxiv.org/pdf/2103.14030.pdf), [code](https://github.com/microsoft/Swin-Transformer)), GPT4RoI ([paper](https://arxiv.org/abs/2201.03545), [code](https://github.com/facebookresearch/ConvNeXt)), thanks for their excellent works.
