@@ -106,4 +106,4 @@ If this project has been helpful or if you've used our dataset, please cite:
 
 ## Acknowledgment
 
-This project is based on LLaVA ([paper](https://arxiv.org/abs/2312.00752), [code](https://github.com/state-spaces/mamba)), LISA ([paper](https://arxiv.org/pdf/2103.14030.pdf), [code](https://github.com/microsoft/Swin-Transformer)), GPT4RoI ([paper](https://arxiv.org/abs/2201.03545), [code](https://github.com/facebookresearch/ConvNeXt)), thanks for their excellent works.
+This project is based on LLaVA ([paper](https://arxiv.org/abs/2304.08485), [code](https://github.com/haotian-liu/LLaVA)), LISA ([paper](https://arxiv.org/abs/2308.00692), [code](https://github.com/dvlab-research/LISA)), GPT4RoI ([paper](https://arxiv.org/abs/2307.03601), [code](https://github.com/jshilong/GPT4RoI)), thanks for their excellent works.
