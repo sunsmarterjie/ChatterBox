@@ -117,6 +117,7 @@ LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-1
 |        ├── finetune_refcoco_train.json
 |        ├── finetune_refcoco+_train.json
 │        └── ...
+├── groundingdino_swinb_cogcoor.pth
 ```
 
 * Train ChatterBox on 8xA800 GPUs (80GB).
