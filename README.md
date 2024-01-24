@@ -29,8 +29,8 @@ In this study, we establish a baseline for a new task named multimodal multi-rou
 
 Key Contributions:
 
-* **CB-300k** - propose a **data construction scheme **and establish the **CB-300K benchmark** to facilitate the research in MRG.
-* **Chatterbox Model** - vision-language model that injects explicit **vision modules** into an MLLM, providing an agile and effective solution of MRG.
+* **CB-300k** - We establish the **CB-300K benchmark** to facilitate the research in multi-round referring and grounding.
+* **Chatterbox Model** - We establish the ChatterBox model in a dual-branch architecture to solve multi-round referring and grounding problem.
 
 
 ## Updates
