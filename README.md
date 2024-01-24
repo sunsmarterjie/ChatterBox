@@ -75,6 +75,21 @@ python setup.py build install
 
 ## Train
 
+* Prepare datasets:
+  ```
+├── dataset
+│   ├── coco
+│   │   └── train2017
+│   │       ├── 000000000009.jpg
+│   │       └── ...
+│   ├── llava_dataset
+│   │   └── llava_instruct_150k.json
+│   │   ├── refclef
+│   │   ├── refcoco
+│   │   ├── refcoco+
+│   │   └── refcocog
+```
+
 ChatterBox is trained on 8 A800 GPUs with 80GB memory. 
 
 ```
