@@ -30,7 +30,7 @@ Key Contributions:
 
 
 ## Updates
- * **` Jan. 19th, 2024`:**The paper, code, model, and dataset will be released soon.* [[Paper](https://arxiv.org/abs/2310.07704)]
+ * **` Jan. 19th, 2024`:** The paper, code, model, and dataset will be released soon.* [[Paper](https://arxiv.org/abs/2310.07704)]
 
 
 ## Release
