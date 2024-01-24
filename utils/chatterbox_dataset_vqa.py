@@ -10,8 +10,6 @@ import torch.nn.functional as F
 from transformers import CLIPImageProcessor
 import torchvision
 
-# from .dino_transform import dino_transform
-
 from .conversation import get_default_conv_template
 from .utils import (
     DEFAULT_IM_END_TOKEN,
@@ -61,7 +59,7 @@ class JackLogicVQADataset(torch.utils.data.Dataset):
         self.clip_image_processor = CLIPImageProcessor.from_pretrained(vision_tower)
 
         self.data_path = os.path.join(base_root)
-        with open(os.path.join(anno_path, 'jack_logic_v30.json')) as f:
+        with open(os.path.join(anno_path, 'CB-LC.json')) as f:
             jack_json = json.load(f)
         self.jack_json = jack_json['data']
 
@@ -253,7 +251,7 @@ class JackVQADataset(torch.utils.data.Dataset):
         # self.transform = dino_transform  # transforms for dino detection
         self.clip_image_processor = CLIPImageProcessor.from_pretrained(vision_tower)
         self.data_path = os.path.join(base_root)
-        with open(os.path.join(anno_path, 'jack_v20_filter_3000.json')) as f:
+        with open(os.path.join(anno_path, 'CB-MRG.json')) as f:
             jack_json = json.load(f)
         self.jack_json = jack_json['data']
 
@@ -629,7 +627,6 @@ class VQADataset(torch.utils.data.Dataset):
     ):
         dataset = "jacklogicvqa||jackvqa||vqa"
         sample_rate = [1, 2, 7]
-        # sample_rate = [0, 0, 7]
 
         sample_rate = np.array(sample_rate)
         self.sample_rate = sample_rate / sample_rate.sum()
@@ -644,19 +641,19 @@ class VQADataset(torch.utils.data.Dataset):
             if dataset == "jacklogicvqa":
                 self.all_datasets.append(
                     JackLogicVQADataset(
-                        base_root='/home/TianYunjie/Workspace/datasets/VG/VG/',
+                        base_root='../datasets/VG/',
                         tokenizer=tokenizer,
                         vision_tower=vision_tower,
-                        anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
+                        anno_path='../datasets/CB-300K/'
                     )
                 )
             elif dataset == "jackvqa":
                 self.all_datasets.append(
                     JackVQADataset(
-                        base_root='/home/TianYunjie/Workspace/datasets/VG/VG/',
+                        base_root='../datasets/VG/',
                         tokenizer=tokenizer,
                         vision_tower=vision_tower,
-                        anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
+                        anno_path='../datasets/CB-300K/'
                     )
                 )
             elif dataset == "vqa":
@@ -665,7 +662,7 @@ class VQADataset(torch.utils.data.Dataset):
                         base_coco_dir,
                         tokenizer,
                         vision_tower,
-                        anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
+                        anno_path='../datasets/'
                     )
                 )
 
