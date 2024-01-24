@@ -17,7 +17,7 @@ Paper: ([arXiv 2401.10166](https://arxiv.org/abs/2401.10166))
 ## Overview
 
 <p align="center">
-    <img src="assets/figure-structure-1.jpg" width="100%"></a> <br>
+    <img src="assets/figure-structure-1.jpg" width="80%"></a> <br>
     Diagram of ChatterBox Model.
 </p>
 
