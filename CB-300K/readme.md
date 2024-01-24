@@ -1,7 +1,7 @@
 
 ## Dataset collection
 
-We provide the reproduce process of CB-300K, but it costs about 10000 dallors to buy the GPT-4 keys.
+We provide the reproduce process of CB-300K, but it costs about 10000 dallors to buy the GPT-4 keys. 
 
 * Download [VG dataset](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html).
 
