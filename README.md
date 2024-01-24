@@ -102,7 +102,11 @@ LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-1
 |   |    ├── flickr30k-images
 │   │    └── ...
 │   ├── llava_instruct_150k.json
-│   │   
+|   ├── CB_materials
+|   |    ├── CB-refcoco-GND
+|   |    ├── CB-coco-GND
+|   |    ├── CB-refcoco-REF
+│   │    └── ...
 │── clip-vit-large-patch14
 |             ├── config.json
 │             └── ...
