@@ -8,6 +8,12 @@
 
 [Yunjie Tian*](https://sunsmarterjie.github.io/), Tianren Ma*, [Lingxi Xie](https://scholar.google.com.hk/citations?user=EEMm7hwAAAAJ&hl=zh-CN&oi=ao), Jihao Qiu, Xi Tang, Yuan Zhang, Jianbin Jiao, [Qi Tian](https://scholar.google.com.hk/citations?user=61b6eYkAAAAJ&hl=zh-CN&oi=ao), [Qixiang Ye](https://scholar.google.com.hk/citations?user=tjEfgsEAAAAJ&hl=zh-CN&oi=ao) 
 
+<sup>1</sup>  University of Chinese Academy of Sciences, <sup>2</sup>  HUAWEI Inc.
+
+Paper: ([arXiv 2401.10166](https://arxiv.org/abs/2401.10166))
+
+</div>
+
 
 ## Overview
 
