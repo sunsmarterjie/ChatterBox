@@ -29,12 +29,12 @@ In this study, we establish a baseline for a new task named multimodal multi-rou
 
 Key Contributions:
 
-* **CB-300K** - We establish the **CB-300K benchmark** to facilitate the research in multi-round referring and grounding. Download CB-300K [here](CB-300K).
+* **CB-300K** - We establish the **CB-300K benchmark** to facilitate the research in multi-round referring and grounding.
 * **Chatterbox Model** - We establish the ChatterBox model in a dual-branch architecture to solve multi-round referring and grounding problem.
 
 
 ## Updates
- * **` Jan. 24th, 2024`:** The paper, code, model, and dataset will be released soon.* [[Paper](https://arxiv.org/abs/2310.07704)]
+ * **` Jan. 24th, 2024`:** The [paper](https://arxiv.org/abs/2310.07704), code, and [dataset](CB-300K) is released.
 
 
 ## Release
