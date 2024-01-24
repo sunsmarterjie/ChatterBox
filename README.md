@@ -75,9 +75,7 @@ python startup_chatterbox.py
 ```
 
 
-## Evaluation
-
-
+## Citation
 
 If this project has been helpful or if you've used our dataset, please cite:
 ```bash
