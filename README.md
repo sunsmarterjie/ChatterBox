@@ -98,9 +98,10 @@ LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-1
 |   |    ├── flickr30k-images
 │   │    └── ...
 │   ├── llava_instruct_150k.json
-│   │   ├── refcoco
-│   │   ├── refcoco+
-│   │   └── refcocog
+│   │   
+│── clip-vit-large-patch14
+|             ├── config.json
+│             └── ...
 ```
 
 * Train ChatterBox on 8xA800 GPUs (80GB).
