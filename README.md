@@ -91,7 +91,7 @@ python setup.py build install
 │   │   └── refcocog
 ```
 
-ChatterBox is trained on 8 A800 GPUs with 80GB memory. 
+* Train ChatterBox on 8xA800 GPUs (80GB). 
 
 ```
 python startup_chatterbox.py
