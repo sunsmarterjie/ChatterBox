@@ -80,7 +80,7 @@ We build visual branch of ChatterBox using [GroundingDINO](https://github.com/ID
 * Prepare datasets:
 
 Download [VG](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html), [COCO2017](https://cocodataset.org/#download), [COCO2014](https://cocodataset.org/#download), [RefCOCO](https://web.archive.org/web/20220413011718/https://bvisionweb1.cs.unc.edu/licheng/referit/data/refcoco.zip), [RefCOCO+](https://web.archive.org/web/20220413011656/https://bvisionweb1.cs.unc.edu/licheng/referit/data/refcoco+.zip), [RefCOCOg](https://web.archive.org/web/20220413012904/https://bvisionweb1.cs.unc.edu/licheng/referit/data/refcocog.zip), [Flickr30K](https://shannon.cs.illinois.edu/DenotationGraph/), [OpenSource](https://drive.google.com/file/d/1mHIm6u9D2SuUyGoQQI4bO7GC9ecjY_Y5/view?usp=sharing), [clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14), [
-LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_instruct_150k.json), 
+LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_instruct_150k.json), [llava-llama-2-13b](https://huggingface.co/liuhaotian/llava-llama-2-13b-chat-lightning-preview/tree/main).
 
 ```
 ├── datasets
@@ -102,6 +102,9 @@ LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-1
 │── clip-vit-large-patch14
 |             ├── config.json
 │             └── ...
+│── llava-llama-2-13b-chat-lightning-preview
+|                      ├── config.json
+│                      └── ...
 ```
 
 * Train ChatterBox on 8xA800 GPUs (80GB).
