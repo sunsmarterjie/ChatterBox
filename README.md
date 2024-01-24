@@ -1,4 +1,8 @@
-# <img src="assets/chatterbox_logo_1.png" alt="Alt text for the image" width="45" height="45"> ChatterBox: Multi-round Multimodal Referring and Grounding
+<div align="center">
+<h1>ChatterBox </h1>
+
+<h3><img src="assets/chatterbox_logo_1.png" alt="Alt text for the image" width="40" height="40"> ChatterBox: Multi-round Multimodal Referring and Grounding</h3>
+
 *The paper, code, model, and dataset will be released soon.*
  [[Paper](https://arxiv.org/abs/2310.07704)]
 
