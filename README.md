@@ -51,7 +51,7 @@ git clone https://github.com/sunsmarterjie/ChatterBox
 cd ChatterBox
 ```
 
-2. Install Package
+2. Install Packages
 
 ```Shell
 conda create -n chatterbox python=3.11.5 
