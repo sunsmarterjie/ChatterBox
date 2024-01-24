@@ -89,7 +89,7 @@ See details at [evaluation](evaluation/readme.md).
 
 ## Demo
 
-xxx.
+Coming soon
 
 
 ## Citation
