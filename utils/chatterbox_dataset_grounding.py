@@ -60,7 +60,7 @@ class RefCOCOGroundingDataset(torch.utils.data.Dataset):
         self.clip_image_processor = CLIPImageProcessor.from_pretrained(vision_tower)
 
         self.data_path = os.path.join(base_root)
-        with open(os.path.join(anno_path, 'jack_refcoco_refcoco+_grounding_v30.json')) as f:
+        with open(os.path.join(anno_path, 'CB-refcoco-GND.json')) as f:
             jack_json = json.load(f)
         self.jack_json = jack_json['data']
 
@@ -262,7 +262,7 @@ class COCOGroundingDataset(torch.utils.data.Dataset):
         self.precision = precision
         self.clip_image_processor = CLIPImageProcessor.from_pretrained(vision_tower)
         self.data_path = os.path.join(base_root)
-        with open(os.path.join(anno_path, 'jack_v30_ground_coco.json')) as f:
+        with open(os.path.join(anno_path, 'CB-coco-GND.json')) as f:
             jack_json = json.load(f)
         self.jack_json = jack_json['data']
 
@@ -465,7 +465,7 @@ class JackGroundingDataset(torch.utils.data.Dataset):
         # self.transform = dino_transform  # transforms for dino detection
         self.clip_image_processor = CLIPImageProcessor.from_pretrained(vision_tower)
         self.data_path = os.path.join(base_root)
-        with open(os.path.join(anno_path, 'jack_v20_ground_canyoufind_filter3000.json')) as f:
+        with open(os.path.join(anno_path, 'CB-GND.json')) as f:
             jack_json = json.load(f)
         self.jack_json = jack_json['data']
 
@@ -689,7 +689,7 @@ class JackLogicGroundingDataset(torch.utils.data.Dataset):
         # self.transform = dino_transform  # transforms for dino detection
         self.clip_image_processor = CLIPImageProcessor.from_pretrained(vision_tower)
         self.data_path = os.path.join(base_root)
-        with open(os.path.join(anno_path, 'jack_logic_v30.json')) as f:
+        with open(os.path.join(anno_path, 'CB-LC.json')) as f:
             jack_json = json.load(f)
         self.jack_json = jack_json['data']
 
@@ -979,7 +979,7 @@ class GroundingDataset(torch.utils.data.Dataset):
                         base_root='../datasets/train2014/',
                         tokenizer=tokenizer,
                         vision_tower=vision_tower,
-                        anno_path="/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/"
+                        anno_path="../datasets/CB-materials/"
                     )
                 )
             elif dataset == "cocoground":
@@ -988,7 +988,7 @@ class GroundingDataset(torch.utils.data.Dataset):
                         base_root='../datasets/train2017',
                         tokenizer=tokenizer,
                         vision_tower=vision_tower,
-                        anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
+                        anno_path='../datasets/CB-materials/'
                     )
                 )
             elif dataset == "jackground":
@@ -997,7 +997,7 @@ class GroundingDataset(torch.utils.data.Dataset):
                         base_root='../datasets/VG/',
                         tokenizer=tokenizer,
                         vision_tower=vision_tower,
-                        anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
+                        anno_path='../datasets/CB-300K/'
                     )
                 )
             elif dataset == "jacklogicground":
@@ -1006,7 +1006,7 @@ class GroundingDataset(torch.utils.data.Dataset):
                         base_root='../datasets/VG/',
                         tokenizer=tokenizer,
                         vision_tower=vision_tower,
-                        anno_path='/home/TianYunjie/Workspace/PycharmProjects/Jack_pure/data_files/'
+                        anno_path='../datasets/CB-300K/'
                     )
                 )
 
