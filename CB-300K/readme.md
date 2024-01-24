@@ -5,8 +5,8 @@ We provide the reproduce process of CB-300K, but it costs about 10000 dallors to
 
 * Download [VG dataset](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html).
 
-*  xxx
-
+* Data cleaning (see appendix).
+  
 * Prompt GPT-4 using the provided [prompts](prompts).
 
 * Filter out bad items, such as very small instances.
