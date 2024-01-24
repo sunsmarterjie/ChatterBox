@@ -976,7 +976,7 @@ class GroundingDataset(torch.utils.data.Dataset):
                     RefCOCOGroundingDataset(
                         base_root='../datasets/train2014/',
                         tokenizer=tokenizer,
-                        vision_tower=vision_tower,
+                        vision_tower='../clip-vit-large-patch14',
                         anno_path="../datasets/CB-materials/"
                     )
                 )
@@ -985,7 +985,7 @@ class GroundingDataset(torch.utils.data.Dataset):
                     COCOGroundingDataset(
                         base_root='../datasets/train2017',
                         tokenizer=tokenizer,
-                        vision_tower=vision_tower,
+                        vision_tower='../clip-vit-large-patch14',
                         anno_path='../datasets/CB-materials/'
                     )
                 )
@@ -994,7 +994,7 @@ class GroundingDataset(torch.utils.data.Dataset):
                     JackGroundingDataset(
                         base_root='../datasets/VG/',
                         tokenizer=tokenizer,
-                        vision_tower=vision_tower,
+                        vision_tower='../clip-vit-large-patch14',
                         anno_path='../datasets/CB-300K/'
                     )
                 )
@@ -1003,7 +1003,7 @@ class GroundingDataset(torch.utils.data.Dataset):
                     JackLogicGroundingDataset(
                         base_root='../datasets/VG/',
                         tokenizer=tokenizer,
-                        vision_tower=vision_tower,
+                        vision_tower='../clip-vit-large-patch14',
                         anno_path='../datasets/CB-300K/'
                     )
                 )
