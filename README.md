@@ -68,7 +68,7 @@ python setup.py build install
 
 ## Train
 
-ChatterBox 13B is trained on 8 A800 GPUs with 80GB memory. 
+ChatterBox is trained on 8 A800 GPUs with 80GB memory. 
 
 ```
 python startup_chatterbox.py
