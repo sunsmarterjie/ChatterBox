@@ -79,7 +79,7 @@ python startup_chatterbox.py
 
 ## Evaluation
 
-See details at [evaluation](evaluation/README.md).
+See details at [evaluation](evaluation/readme.md).
 
 
 ## Demo
