@@ -6,8 +6,7 @@
 *The paper, code, model, and dataset will be released soon.*
  [[Paper](https://arxiv.org/abs/2310.07704)]
 
-[Yunjie Tian*](https://sunsmarterjie.github.io/), [Tianren Ma*](), [Lingxi Xie](), [Jihao Qiu](), [Xi Tang](), [Yuan Zhang](), [Jianbin Jiao](), [Qi Tian](), [Qixiang Ye]() 
-[*: equal contribution]
+[Yunjie Tian*](https://sunsmarterjie.github.io/), Tianren Ma*, [Lingxi Xie](https://scholar.google.com.hk/citations?user=EEMm7hwAAAAJ&hl=zh-CN&oi=ao), Jihao Qiu, Xi Tang, Yuan Zhang, Jianbin Jiao, [Qi Tian](https://scholar.google.com.hk/citations?user=61b6eYkAAAAJ&hl=zh-CN&oi=ao), [Qixiang Ye](https://scholar.google.com.hk/citations?user=tjEfgsEAAAAJ&hl=zh-CN&oi=ao) 
 
 
 ## Overview
