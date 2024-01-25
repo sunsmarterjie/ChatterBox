@@ -32,6 +32,8 @@ Key Contributions:
 * **CB-300K** - We establish the **CB-300K benchmark** to facilitate the research in multi-round referring and grounding.
 * **Chatterbox Model** - We establish the ChatterBox model in a dual-branch architecture to solve multi-round referring and grounding problem.
 
+We emphasize that the proposed multi-round referring and grounding (MRG) is not equivalent to multi single-round referring and grounding. We stress the importance of logical relation between dialogues (see [CB-LC]()), which is crucial for an interactive chat agent.
+
 
 ## Updates
  * **` Jan. 24th, 2024`:** The [paper](https://arxiv.org/abs/2310.07704), code, and [dataset](CB-300K) is released.
