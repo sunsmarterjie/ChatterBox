@@ -21,7 +21,7 @@
 - Download the annotations for Refcoco/Refcoco+/Refcocog from [Github](https://github.com/lichengunc/refer)
 
 ### 2. Generate questions for referring
-- You can run the following command [refcocog_referring.py](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/referring/grounding_dino/data_generate/refcocog_referring_conversation.py) to generate questions and corresponding GT answers for Refcocog referring, we also provide codes for Refcoco and Refcoco+:
+- You can run the following command [refcocog_referring_conversation.py](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/referring/grounding_dino/data_generate/refcocog_referring_conversation.py) to generate questions and corresponding GT answers for Refcocog referring, we also provide codes for Refcoco and Refcoco+:
 ```python
 python refcocog_referring_conversation.py 
 python refcoco_referring_conversation.py
