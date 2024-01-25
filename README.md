@@ -9,7 +9,7 @@
 
 <sup>1</sup>  University of Chinese Academy of Sciences, <sup>2</sup>  HUAWEI Inc.
 
-Paper: ([arXiv 2401.10166](https://arxiv.org/abs/2401.10166))
+Paper: ([arXiv 2401.13307](https://arxiv.org/abs/2401.13307))
 
 </div>
 
@@ -149,7 +149,7 @@ If this project has been helpful or if you've used our dataset, please cite:
 @article{tian2024chatterbox,
   title={ChatterBox: Multi-round Multimodal Referring and Grounding},
   author={Tian, Yunjie and Ma, Tianren and Xie, Lingxi and Qiu, Jihao and Tang, Xi and Zhang, Yuan and Jiao, Jianbin and Tian, Qi and Ye, Qixiang},
-  journal={arXiv preprint arXiv:2401.10166},
+  journal={arXiv preprint arXiv:2401.13307},
   year={2024}
 }
 ```
