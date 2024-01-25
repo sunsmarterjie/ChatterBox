@@ -33,7 +33,7 @@ Key Contributions:
 * **Chatterbox Model** - We establish the ChatterBox model in a dual-branch architecture to solve multi-round referring and grounding problem.
 
 
-### We clarify that our multi-round referring and grounding (MRG) is distinct from multi single-round referring and grounding. The logical coherence between dialogues (see [CB-LC]([CB-LC](https://drive.google.com/file/d/1C0XyMyhLRzdSDbtWAiGdW1rjljop0sMe/view?usp=sharing))), is crucial for an interactive chat agent, and we are the first to address this challenge.
+### We clarify that our multi-round referring and grounding (MRG) is distinct from multi single-round referring and grounding. The logical coherence between dialogues (see [CB-LC](https://drive.google.com/file/d/1C0XyMyhLRzdSDbtWAiGdW1rjljop0sMe/view?usp=sharing)), is crucial for an interactive chat agent, and we are the first on this problem.
 
 
 ## Updates
