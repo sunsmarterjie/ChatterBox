@@ -106,10 +106,10 @@ LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-1
 │   │    └── ...
 │   ├── llava_instruct_150k.json
 |   ├── CB_materials
-|   |    ├── CB-refcoco-GND
-|   |    ├── CB-coco-GND
-|   |    ├── CB-refcoco-REF
-│   │    └── ...
+|            ├── CB-refcoco-GND
+|            ├── CB-coco-GND
+|            ├── CB-refcoco-REF
+│            └── ...
 │── clip-vit-large-patch14
 |             ├── config.json
 │             └── ...
