@@ -28,7 +28,7 @@ python generate_grounding_qa.py --coco_path /path/to/MSCOCO2017/annotations/inst
 ```
 bash eval_grounding.sh
 ```
-- Remember to replace the related paths in our provided file with the specific path on your machine. Here is the provided [checkpoint]().
+- Remember to replace the related paths in our provided file with the specific path on your machine. Here is the provided [checkpoint](https://pan.baidu.com/s/1eXQdkXVqNCp4Sa31S-rJPw&pwd=7c07).
 - Alternatively, you can also download the predicted file: [prediction.json](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/grounding/grounding_dino/grounding_files/prediction.json). Remember to replace image and annotation paths in our provided file with the specific path on your machine.
 ### 2. Evaluation
 - You can run the following command ([evaluate_coco_gd.py](https://github.com/sunsmarterjie/ChatterBox/blob/main/evaluation/grounding/grounding_dino/evaluate_coco_gd.py)) to evaluate results of chatterbox:

@@ -6,7 +6,7 @@ import numpy as np
 import torch
 import transformers
 from transformers import AutoTokenizer, CLIPImageProcessor
-from model.ChatterBox_Referrring_Grounding_grounding_dino import JACK
+from model.ChatterBox_Referrring_Grounding_grounding_dino import ChatterBox
 from utils.conversation import get_default_conv_template
 import utils.transforms as T
 from PIL import Image
@@ -16,7 +16,7 @@ import torchvision
 
 
 def parse_args(args):
-    parser = argparse.ArgumentParser(description="JACK chat")
+    parser = argparse.ArgumentParser(description="ChatterBox chat")
     parser.add_argument("--version", default="/path/to/llava-llama-2-13b-chat-lightning-preview")
     parser.add_argument("--vis_save_path", default="./vis_output", type=str)
     parser.add_argument("--vision_pretrained", default="PATH_TO_DINO", type=str)
@@ -204,7 +204,7 @@ def main(args):
     ret_token_idx = tokenizer("[VG]", add_special_tokens=False).input_ids
     args.vg_token_idx = ret_token_idx[0]  # 30523
     vision_args = vision_branch_args()
-    model = JACK(
+    model = ChatterBox(
         args.local_rank,
         args.vg_token_idx,
         tokenizer,
@@ -359,7 +359,7 @@ def main(args):
             conv.append_message(conv.roles[1], "")
             new_prompt = ""
             if conversation_round -1 > 0:
-                prompt = conv.get_prompt(False)
+                prompt = conv.get_prompt()
                 question.append(prompt)
                 if len(question) > 1:
                     question[-2] = (
@@ -373,7 +373,7 @@ def main(args):
                         new_prompt += question[i]
                 prompt = new_prompt  
             else:
-                prompt = conv.get_prompt(True)
+                prompt = conv.get_prompt()
                 question.append(prompt)
 
             #evaluate
