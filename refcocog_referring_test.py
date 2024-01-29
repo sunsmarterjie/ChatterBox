@@ -238,12 +238,12 @@ def main(args):
     
     refcocog_test_path = "./evaluation/referring/gt/refcocog/test.json"
     save_out_path = './evaluation/referring/output/refcocog_test.json'
+    refcoco_testb_path = refcocog_test_path
     prompt_list,image_path_list,gt_list,image_list,ref_id_list=get_list(refcoco_testb_path)
     # id_list,image_id_list,category_id_list,question_list,answer_list=get_list(refcoco_testb_path)
     cnt=0
     cnt+=1
     output_list=[]
-    refcoco_testb_path = refcocog_test_path
     for idx in range(len(image_path_list)):
         output_dict = {}
         gt=gt_list[idx]
