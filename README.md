@@ -67,7 +67,7 @@ conda create -n chatterbox python=3.11.5
 conda activate chatterbox
 pip install --upgrade pip  # enable PEP 660 support
 pip install -r requirements.txt
-pip install deepspeed
+pip install deepspeed==0.11.1
 unzip mmcv-1.4.7.zip
 cd mmcv-1.4.7/
 MMCV_WITH_OPS=1 pip install -e .
