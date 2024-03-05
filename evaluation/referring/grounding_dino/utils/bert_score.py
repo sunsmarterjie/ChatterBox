@@ -35,6 +35,6 @@ for i in range(len(content["predictions"])):
     outputs.append(content["predictions"][i]["sent"])
     output[id] = out
 
-(P, R, F), hashname = score(gts, outputs, lang="en", return_hash=True)
+(P, R, F), hashname = score(outputs, gts, lang="en", return_hash=True)
 print(
 f"{hashname}: P={P.mean().item():.6f} R={R.mean().item():.6f} F={F.mean().item():.6f}")
