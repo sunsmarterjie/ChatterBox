@@ -37,7 +37,7 @@ Key Contributions:
 
 
 ## Updates
- * **` Jan. 24th, 2024`:** The [paper](https://arxiv.org/abs/2310.07704), code, and [dataset](CB-300K) is released.
+ * **` Jan. 24th, 2024`:** The [paper](https://arxiv.org/abs/2401.13307), code, and [dataset](CB-300K) is released.
 
 
 ## Release
