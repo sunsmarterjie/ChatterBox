@@ -90,14 +90,10 @@ def task2(times):
     return task
 
 def get_prompt(relationship,times=4):
-    st1 = " [{'role': 'system', 'content': "
     quotation = '"'
     triple_quotation = '\n""" \n'
-    st2 ='You are an AI visual assistant, and you are seeing a single image. You know several descriptions of the image, each describing a specific relationship in the image you are observing with the position of objects in this image in the form of bounding box represented as (x1, y1, x2, y2) .Please note that there may be several objects of the same category in an image, and we use "name_number" to present these objects, such as "man_1","man_2" to describe different men. Specific information is as follow:\n'
-    relationship_def = ' Relationship: the relationship between two objects (with name and coordinates) \n'
     t2=task2(times)
-    st5 = '}]'
-    prompt=st1+quotation+st2+triple_quotation+relationship_def+str(relationship)+triple_quotation+t2+quotation+st5
+    prompt=str(relationship)+triple_quotation+t2+quotation
     return prompt
 
 
@@ -125,10 +121,13 @@ def send_request_to_openai(model, messages):
     return response
 
 def chat(content):
+    st2 ='You are an AI visual assistant, and you are seeing a single image. You know several descriptions of the image, each describing a specific relationship in the image you are observing with the position of objects in this image in the form of bounding box represented as (x1, y1, x2, y2) .Please note that there may be several objects of the same category in an image, and we use "name_number" to present these objects, such as "man_1","man_2" to describe different men. '
+    relationship_def = ' Relationship: the relationship between two objects (with name and coordinates) \n'
+    sys_content=st2+relationship_def
     #get answer
     a1 = datetime.datetime.now()
     response = send_request_to_openai('gpt-4',
-                                    [{'role': 'user', 'content': content}])
+                                    [{'role': 'user', 'content': content},{'role':'system','content':sys_content}])
     answer=response.choices[0].message['content']
     a2=datetime.datetime.now()
     t=a2-a1
