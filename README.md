@@ -1,7 +1,7 @@
 <div align="center">
 <h1>ChatterBox </h1>
 
-<h3><img src="assets/chatterbox_logo_1.png" alt="Alt text for the image" width="25" height="25"> ChatterBox: Multi-round Multimodal Referring and Grounding</h3>
+<h3><img src="assets/chatterbox_logo_1.png" alt="Alt text for the image" width="25" height="25"> [AAAI2025] ChatterBox: Multi-round Multimodal Referring and Grounding</h3>
 
 
 
