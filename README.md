@@ -47,7 +47,6 @@ Key Contributions:
 - [Install](#install)
 - [Train](#train)
 - [Evaluation](#evaluation)
-- [Demo](#demo)
 
 ## Install
 
