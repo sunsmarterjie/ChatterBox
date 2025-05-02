@@ -139,11 +139,14 @@ See details at [evaluation](evaluation/readme.md).
 
 If this project has been helpful or if you've used our dataset, please cite:
 ```
-@article{tian2024chatterbox,
-  title={ChatterBox: Multi-round Multimodal Referring and Grounding},
-  author={Tian, Yunjie and Ma, Tianren and Xie, Lingxi and Qiu, Jihao and Tang, Xi and Zhang, Yuan and Jiao, Jianbin and Tian, Qi and Ye, Qixiang},
-  journal={arXiv preprint arXiv:2401.13307},
-  year={2024}
+@inproceedings{tian2025chatterbox,
+  title={ChatterBox: Multimodal Referring and Grounding with Chain-of-Questions},
+  author={Tian, Yunjie and Ma, Tianren and Xie, Lingxi and Ye, Qixiang},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={7},
+  pages={7401--7409},
+  year={2025}
 }
 ```
 
