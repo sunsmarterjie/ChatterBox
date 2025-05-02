@@ -135,11 +135,6 @@ python startup_stage2.py  # stage2
 See details at [evaluation](evaluation/readme.md).
 
 
-## Demo
-
-Coming soon
-
-
 ## Citation
 
 If this project has been helpful or if you've used our dataset, please cite:
